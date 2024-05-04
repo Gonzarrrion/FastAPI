@@ -16,10 +16,6 @@ listaArticulos = [
     { "id": 4, "titulo": "Articulo 4", "contenido": "Contenido del articulo 4" }
 ]
 
-#@app.get("/articulos", response_model=List[Articulo])
-#async def get_articulos():
-#    return listaArticulos
-
 # Obtener todos los articulos
 @app.get("/articulos")
 async def get_articulos():
